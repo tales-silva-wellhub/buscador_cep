@@ -98,7 +98,7 @@ if arquivo_upload is not None:
                 
                 # Um sleep minúsculo apenas para requisições que NÃO estão no cache
                 # Para não sobrecarregar o ViaCEP (o cache responde na hora)
-                if resultado[4] == "Sucesso (API)":
+                if resultado['Status_Busca'] == "Sucesso (API)":
                     time.sleep(0.3)
                     
             # Junta os resultados no DataFrame original
